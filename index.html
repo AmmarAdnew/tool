@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover - Clean & Simple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Background Remover</h1>
+        <p>Remove backgrounds from your images in seconds</p>
+    </header>
+    <main>
+        <section class="upload-section">
+            <div class="drop-zone" id="dropZone">
+                <p>Drag & Drop your image here or <span class="upload-link">Browse</span></p>
+                <input type="file" id="imageInput" accept="image/*" hidden>
+            </div>
+        </section>
+        <section class="preview-section">
+            <div class="image-container">
+                <h3>Original</h3>
+                <img id="originalImage" alt="Original Image">
+            </div>
+            <div class="image-container">
+                <h3>Result</h3>
+                <img id="resultImage" alt="Processed Image">
+            </div>
+        </section>
+        <button id="removeBgBtn" disabled>Remove Background</button>
+        <a id="downloadBtn" href="#" download="result.png" class="download-btn" hidden>Download Image</a>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
